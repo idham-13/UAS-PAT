@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4BAFDC"
+    tools:context=".Order">
+
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsiOrderanAnda">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="192dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etGameName"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:hint="Nama Game"
+                android:textColor="#050404"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="260dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNamaAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Akun Dipesan"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="321dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAlamatEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnToOrder"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Order Akun"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <Button
+            android:id="@+id/btnBackOrder"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvIsiOrderanAnda"
+        android:layout_width="196dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="52dp"
+        android:text="Isi Orderan Anda"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

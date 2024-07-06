@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#418DCF"
+    tools:context=".MenuById">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etIdAkun"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etByMenuId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mencari Akun Menggunakan Id..."
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageViewById"
+        android:layout_width="244dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIdAkun"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvNamaGameById"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Nama Game BY Id"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNamaAkunById" />
+
+    <TextView
+        android:id="@+id/tvNamaAkunById"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:text="Nama Akun By Id"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewById" />
+
+    <TextView
+        android:id="@+id/tvDeskripsiById"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Deskripsi By Id"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/tvNamaAkunById"
+        app:layout_constraintStart_toStartOf="@+id/tvNamaGameById"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaGameById" />
+
+    <TextView
+        android:id="@+id/tvHargaById"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="HargaById"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvDeskripsiById"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeskripsiById" />
+
+    <Button
+        android:id="@+id/btnOrderMenuByid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/tvDeskripsiById"
+        app:layout_constraintTop_toTopOf="@+id/tvHargaById" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Search"
+        app:layout_constraintBottom_toBottomOf="@+id/etIdAkun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/etIdAkun"
+        app:layout_constraintTop_toTopOf="@+id/etIdAkun"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnBackById"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
